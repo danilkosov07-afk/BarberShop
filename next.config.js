@@ -11,9 +11,6 @@ const nextConfig = {
   poweredByHeader: false,
   generateEtags: true,
   swcMinify: true,
-  experimental: {
-    optimizeCss: true,
-  },
 }
 
 module.exports = nextConfig

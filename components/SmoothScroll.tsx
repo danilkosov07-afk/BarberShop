@@ -16,10 +16,18 @@ export default function SmoothScroll() {
 
     // Динамический импорт Lenis только на клиенте
     import('lenis').then((LenisModule) => {
-      const Lenis = LenisModule.default || LenisModule
+      // Проверка, что Lenis доступен как конструктор
+      const LenisClass = (LenisModule.default && typeof LenisModule.default === 'function') 
+        ? LenisModule.default 
+        : (typeof LenisModule === 'function' ? LenisModule : null)
+      
+      if (!LenisClass) {
+        console.warn('Lenis could not be loaded')
+        return
+      }
       
       // Инициализация Lenis с премиальными настройками
-      lenis = new Lenis({
+      lenis = new LenisClass({
         duration: 1.8, // Увеличена длительность для более медленной прокрутки
         easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Плавная easing функция
         orientation: 'vertical' as const,
@@ -74,6 +82,8 @@ export default function SmoothScroll() {
 
       // Сброс прокрутки при смене страницы
       lenis.scrollTo(0, { immediate: true })
+    }).catch((error) => {
+      console.warn('Failed to load Lenis:', error)
     })
 
     // Cleanup функция
