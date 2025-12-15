@@ -184,26 +184,32 @@ export default function Contacts() {
             <motion.div variants={itemVariants} className="space-y-8">
               {/* Contact Cards */}
               <div className="space-y-6">
-                {Object.entries(contactsData.info).map(([key, info]) => (
-                  <motion.a
-                    key={key}
-                    href={info.href || '#'}
-                    className="group flex items-start gap-4 p-6 bg-primary-dark/5 rounded-sm border border-primary-gray-light/20 hover:border-primary-accent/50 transition-all duration-300"
-                    whileHover={{ x: 5 }}
-                  >
-                    <div className="text-primary-accent mt-1 group-hover:scale-110 transition-transform duration-300">
-                      {iconMap[info.icon] || iconMap.clock}
-                    </div>
-                    <div className="flex-1">
-                      <p className="text-body text-body-sm text-primary-dark/60 mb-1 font-medium">
-                        {info.label}
-                      </p>
-                      <p className="text-body text-body-lg text-primary-dark font-semibold">
-                        {info.value}
-                      </p>
-                    </div>
-                  </motion.a>
-                ))}
+                {Object.entries(contactsData.info).map(([key, info]) => {
+                  const hasHref = 'href' in info && info.href
+                  const Component = hasHref ? motion.a : motion.div
+                  const href = hasHref ? (info as { href: string }).href : undefined
+                  
+                  return (
+                    <Component
+                      key={key}
+                      {...(hasHref ? { href } : {})}
+                      className="group flex items-start gap-4 p-6 bg-primary-dark/5 rounded-sm border border-primary-gray-light/20 hover:border-primary-accent/50 transition-all duration-300"
+                      {...(hasHref ? { whileHover: { x: 5 } } : {})}
+                    >
+                      <div className="text-primary-accent mt-1 group-hover:scale-110 transition-transform duration-300">
+                        {iconMap[info.icon] || iconMap.clock}
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-body text-body-sm text-primary-dark/60 mb-1 font-medium">
+                          {info.label}
+                        </p>
+                        <p className="text-body text-body-lg text-primary-dark font-semibold">
+                          {info.value}
+                        </p>
+                      </div>
+                    </Component>
+                  )
+                })}
               </div>
 
               {/* Social Links */}
