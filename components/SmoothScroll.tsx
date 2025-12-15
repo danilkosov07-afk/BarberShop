@@ -18,7 +18,6 @@ export default function SmoothScroll() {
       wheelMultiplier: 0.5, // Уменьшен множитель для более медленной прокрутки колесиком
       touchMultiplier: 1.0, // Более медленная прокрутка на тач-устройствах
       infinite: false,
-      smoothTouch: true, // Плавная прокрутка на мобильных
     })
 
     // Функция для анимации прокрутки
