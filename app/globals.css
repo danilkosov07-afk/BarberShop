@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Preload critical fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Manrope', sans-serif;
+  }
+
+  * {
+    @apply border-primary-gray-dark/20;
+  }
+
+  html {
+    /* Lenis будет управлять прокруткой */
+    overflow-x: hidden;
+  }
+
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-primary-dark text-primary-light;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold text-primary-light;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12;
+  }
+
+  .section {
+    @apply py-section;
+  }
+
+  .section-sm {
+    @apply py-section-sm;
+  }
+
+  .section-lg {
+    @apply py-section-lg;
+  }
+
+  .text-display {
+    font-family: var(--font-display);
+  }
+
+  .text-body {
+    font-family: var(--font-body);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-body font-semibold text-primary-dark bg-primary-accent hover:bg-primary-accent/90 transition-all duration-300 rounded-sm;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 text-body font-semibold text-primary-light border-2 border-primary-light hover:bg-primary-light hover:text-primary-dark transition-all duration-300 rounded-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-8 py-4 text-body font-semibold text-primary-accent border-2 border-primary-accent hover:bg-primary-accent hover:text-primary-dark transition-all duration-300 rounded-sm;
+  }
+
+  .section-dark {
+    @apply bg-primary-dark text-primary-light;
+  }
+
+  .section-light {
+    @apply bg-primary-light text-primary-dark;
+  }
+
+  .section-gray {
+    @apply bg-primary-gray-dark text-primary-light;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
+

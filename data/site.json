@@ -1,0 +1,367 @@
+{
+  "hero": {
+    "title": "Премиальный барбершоп",
+    "subtitle": "Для тех, кто ценит качество",
+    "offer": "Стрижка от мастера с опытом 10+ лет",
+    "description": "Не просто стрижка. Это искусство создания вашего уникального стиля. Мастера международного уровня, премиальные инструменты и атмосфера, достойная настоящих джентльменов.",
+    "trust": {
+      "years": "10+",
+      "yearsLabel": "лет опыта",
+      "clients": "5000+",
+      "clientsLabel": "довольных клиентов",
+      "masters": "8",
+      "mastersLabel": "мастеров высшего класса"
+    },
+    "cta": {
+      "primary": {
+        "text": "Записаться на стрижку",
+        "href": "#contacts"
+      },
+      "secondary": {
+        "text": "Посмотреть работы",
+        "href": "#gallery"
+      }
+    },
+    "image": "/images/hero.jpg"
+  },
+  "about": {
+    "title": "О барбершопе",
+    "subtitle": "Традиции и мастерство",
+    "description": "Мы — команда профессионалов, которые превращают стрижку в искусство. Каждый мастер проходит строгий отбор и регулярное обучение. Мы используем только премиальные инструменты и средства, чтобы обеспечить максимальный комфорт и результат.",
+    "features": [
+      {
+        "icon": "scissors",
+        "title": "Мастера высшего класса",
+        "description": "Опыт работы от 5 лет, постоянное обучение новым техникам"
+      },
+      {
+        "icon": "tools",
+        "title": "Премиальные инструменты",
+        "description": "Используем только профессиональное оборудование и косметику"
+      },
+      {
+        "icon": "atmosphere",
+        "title": "Уникальная атмосфера",
+        "description": "Комфортная обстановка для настоящих ценителей стиля"
+      },
+      {
+        "icon": "service",
+        "title": "Индивидуальный подход",
+        "description": "Каждый клиент получает персональные рекомендации по стилю"
+      }
+    ],
+    "image": "/images/about.jpg"
+  },
+  "services": {
+    "title": "Наши услуги",
+    "subtitle": "Полный спектр услуг для вашего стиля",
+    "items": [
+      {
+        "id": "haircut",
+        "name": "Стрижка",
+        "description": "Классические и современные стрижки любой сложности",
+        "price": "от 1500 ₽",
+        "duration": "45 мин",
+        "image": "/images/services/haircut.jpg"
+      },
+      {
+        "id": "beard",
+        "name": "Стрижка бороды",
+        "description": "Точная форма и стилизация бороды и усов",
+        "price": "от 800 ₽",
+        "duration": "30 мин",
+        "image": "/images/services/beard.jpg"
+      },
+      {
+        "id": "full-service",
+        "name": "Комплексная услуга",
+        "description": "Стрижка + стрижка бороды + укладка + уход",
+        "price": "от 2500 ₽",
+        "duration": "90 мин",
+        "image": "/images/services/full.jpg"
+      },
+      {
+        "id": "shave",
+        "name": "Классическое бритье",
+        "description": "Традиционное бритье опасной бритвой с горячим полотенцем",
+        "price": "от 1200 ₽",
+        "duration": "40 мин",
+        "image": "/images/services/shave.jpg"
+      },
+      {
+        "id": "styling",
+        "name": "Укладка",
+        "description": "Профессиональная укладка волос премиальными средствами",
+        "price": "от 500 ₽",
+        "duration": "20 мин",
+        "image": "/images/services/styling.jpg"
+      },
+      {
+        "id": "care",
+        "name": "Уход за бородой",
+        "description": "Масла, бальзамы и профессиональный уход",
+        "price": "от 600 ₽",
+        "duration": "25 мин",
+        "image": "/images/services/care.jpg"
+      }
+    ]
+  },
+  "advantages": {
+    "title": "Почему выбирают нас",
+    "subtitle": "Преимущества премиального сервиса",
+    "items": [
+      {
+        "id": "experience",
+        "title": "Опыт",
+        "description": "Более 10 лет на рынке премиальных барбершопов",
+        "icon": "trophy"
+      },
+      {
+        "id": "masters",
+        "title": "Мастера",
+        "description": "Только сертифицированные специалисты с опытом от 5 лет",
+        "icon": "user"
+      },
+      {
+        "id": "quality",
+        "title": "Качество",
+        "description": "Премиальные инструменты и косметика от ведущих брендов",
+        "icon": "star"
+      },
+      {
+        "id": "atmosphere",
+        "title": "Атмосфера",
+        "description": "Уютная обстановка с вниманием к каждой детали",
+        "icon": "heart"
+      },
+      {
+        "id": "convenience",
+        "title": "Удобство",
+        "description": "Онлайн-запись, удобное расположение, парковка",
+        "icon": "clock"
+      },
+      {
+        "id": "loyalty",
+        "title": "Программа лояльности",
+        "description": "Накопительная система скидок для постоянных клиентов",
+        "icon": "gift"
+      }
+    ]
+  },
+  "trust": {
+    "title": "Нам доверяют",
+    "subtitle": "Опыт и репутация",
+    "stats": [
+      {
+        "value": "10+",
+        "label": "лет на рынке",
+        "description": "Непрерывная работа с 2014 года"
+      },
+      {
+        "value": "5000+",
+        "label": "довольных клиентов",
+        "description": "Постоянная база и новые гости"
+      },
+      {
+        "value": "8",
+        "label": "мастеров",
+        "description": "Сертифицированные профессионалы"
+      },
+      {
+        "value": "98%",
+        "label": "рекомендуют нас",
+        "description": "Высокий уровень удовлетворенности"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "testimonial-1",
+        "name": "Александр",
+        "role": "Постоянный клиент",
+        "text": "Лучший барбершоп в городе. Мастера действительно профессионалы, атмосфера на высшем уровне. Хожу уже 3 года и не планирую менять.",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-2",
+        "name": "Дмитрий",
+        "role": "Бизнесмен",
+        "text": "Именно то, что нужно для деловых встреч. Всегда идеальная стрижка, внимательное отношение. Цена соответствует качеству.",
+        "rating": 5
+      },
+      {
+        "id": "testimonial-3",
+        "name": "Максим",
+        "role": "Клиент",
+        "text": "Пришел по рекомендации друзей и не пожалел. Премиальная атмосфера, отличный сервис. Теперь только сюда.",
+        "rating": 5
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Галерея",
+    "subtitle": "Наша атмосфера и работы",
+    "categories": [
+      { "id": "all", "name": "Все" },
+      { "id": "interior", "name": "Интерьер" },
+      { "id": "work", "name": "Работы" },
+      { "id": "tools", "name": "Инструменты" }
+    ],
+    "images": [
+      {
+        "id": "gallery-1",
+        "src": "/images/gallery/BLOCK.svg",
+        "alt": "Интерьер барбершопа",
+        "category": "interior"
+      },
+      {
+        "id": "gallery-2",
+        "src": "/images/gallery/BLOCK (1).svg",
+        "alt": "Рабочее место мастера",
+        "category": "interior"
+      },
+      {
+        "id": "gallery-3",
+        "src": "/images/gallery/BLOCK (2).svg",
+        "alt": "Пример работы - стрижка",
+        "category": "work"
+      },
+      {
+        "id": "gallery-4",
+        "src": "/images/gallery/BLOCK (3).svg",
+        "alt": "Пример работы - борода",
+        "category": "work"
+      },
+      {
+        "id": "gallery-5",
+        "src": "/images/gallery/Group 1000004183.svg",
+        "alt": "Инструменты мастера",
+        "category": "tools"
+      },
+      {
+        "id": "gallery-6",
+        "src": "/images/gallery/Group 1000004199.svg",
+        "alt": "Зона ожидания",
+        "category": "interior"
+      },
+      {
+        "id": "gallery-7",
+        "src": "/images/gallery/Group 1000004200.svg",
+        "alt": "Пример работы - комплексная услуга",
+        "category": "work"
+      },
+      {
+        "id": "gallery-8",
+        "src": "/images/gallery/Group 1000004202.svg",
+        "alt": "Премиальная косметика",
+        "category": "tools"
+      },
+      {
+        "id": "gallery-9",
+        "src": "/images/gallery/Group 1000004203.svg",
+        "alt": "Интерьер барбершопа",
+        "category": "interior"
+      },
+      {
+        "id": "gallery-10",
+        "src": "/images/gallery/Group 1000004204.svg",
+        "alt": "Рабочее место",
+        "category": "interior"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Готовы изменить свой стиль?",
+    "subtitle": "Запишитесь на стрижку прямо сейчас",
+    "description": "Наши мастера помогут вам создать неповторимый образ, который подчеркнет вашу индивидуальность",
+    "button": {
+      "text": "Записаться онлайн",
+      "href": "#contacts"
+    },
+    "image": "/images/cta.jpg"
+  },
+  "contacts": {
+    "title": "Контакты",
+    "subtitle": "Мы всегда на связи",
+    "info": {
+      "address": {
+        "label": "Адрес",
+        "value": "г. Москва, ул. Примерная, д. 10",
+        "icon": "map-pin"
+      },
+      "phone": {
+        "label": "Телефон",
+        "value": "+7 (999) 123-45-67",
+        "href": "tel:+79991234567",
+        "icon": "phone"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@barber-premium.ru",
+        "href": "mailto:info@barber-premium.ru",
+        "icon": "mail"
+      },
+      "hours": {
+        "label": "Часы работы",
+        "value": "Пн-Вс: 10:00 - 22:00",
+        "icon": "clock"
+      }
+    },
+    "social": [
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/barber_premium",
+        "icon": "instagram"
+      },
+      {
+        "name": "VK",
+        "url": "https://vk.com/barber_premium",
+        "icon": "vk"
+      },
+      {
+        "name": "Telegram",
+        "url": "https://t.me/barber_premium",
+        "icon": "telegram"
+      }
+    ],
+    "map": {
+      "embed": "https://www.google.com/maps/embed?pb=...",
+      "link": "https://goo.gl/maps/..."
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 Премиальный барбершоп. Все права защищены.",
+    "links": [
+      {
+        "title": "Услуги",
+        "href": "#services"
+      },
+      {
+        "title": "О нас",
+        "href": "#about"
+      },
+      {
+        "title": "Галерея",
+        "href": "#gallery"
+      },
+      {
+        "title": "Контакты",
+        "href": "#contacts"
+      }
+    ],
+    "legal": [
+      {
+        "title": "Политика конфиденциальности",
+        "href": "/privacy"
+      },
+      {
+        "title": "Пользовательское соглашение",
+        "href": "/terms"
+      }
+    ]
+  },
+  "meta": {
+    "siteName": "Премиальный барбершоп",
+    "siteDescription": "Премиальный барбершоп в Москве. Профессиональные стрижки, бритье и уход за бородой. Мастера высшего класса.",
+    "keywords": "барбершоп, стрижка, бритье, борода, премиум, Москва"
+  }
+}
